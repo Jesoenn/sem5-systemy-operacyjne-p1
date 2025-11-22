@@ -14,8 +14,8 @@ void Benchmark::performSort() {
 
     T min, max;
     if (dataType == 3){ // char
-        min = 0;
-        max = 255;
+        min = -128;
+        max = 127;
     } else if constexpr (std::is_integral_v<T>) {
         min = std::numeric_limits<T>::min();
         max = std::numeric_limits<T>::max();

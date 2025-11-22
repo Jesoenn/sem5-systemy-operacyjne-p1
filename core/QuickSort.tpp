@@ -1,4 +1,4 @@
-
+#include <thread>
 #pragma once
 
 template<typename T>
@@ -33,8 +33,22 @@ void QuickSort<T>::quickSort(int left, int right) {
      if (left < right && left>=0) {
          int pivot = pickPivot(left, right);
          pivot = partition(left, right, pivot);
+
+         std::thread thread;
+         bool threadCreated = false;
+
+         // Multithreading
+         if( threadCount < maxThreads ){
+             threadCount++;
+             threadCreated = true;
+             thread = std::thread(&QuickSort<T>::quickSort, this, pivot+1, right);
+         } else {
+             quickSort(pivot+1, right);
+         }
          quickSort(left, pivot-1);
-         quickSort(pivot+1, right);
+
+         if(threadCreated)
+             thread.join();
      }
 
 //    //While loop will work for 2 iterations
