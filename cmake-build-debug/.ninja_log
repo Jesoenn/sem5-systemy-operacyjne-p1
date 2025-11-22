@@ -1,0 +1,13 @@
+# ninja log v5
+0	146	7855241566552883	build.ninja	a8691f681a02bf64
+6	926	7855217252433622	CMakeFiles/so_projekt1.dir/core/Timer.cpp.obj	cc70f8bbb093dd6c
+2	1391	7855239072272572	CMakeFiles/so_projekt1.dir/modes/Benchmark.cpp.obj	d003d442d29dc117
+13	586	7855236271186808	CMakeFiles/so_projekt1.dir/core/FileManager.cpp.obj	a4667aa4fcb49b4f
+6	1096	7855239069331505	CMakeFiles/so_projekt1.dir/main.cpp.obj	231c819fadf0ece0
+1393	1567	7855239074000400	so_projekt1.exe	9c3070ace9771454
+1	142	7855241566552883	build.ninja	a8691f681a02bf64
+2	643	7855241573330292	CMakeFiles/so_projekt1.dir/core/FileManager.cpp.obj	f27538c1e8abf9b3
+8	1308	7855241579981637	CMakeFiles/so_projekt1.dir/core/Timer.cpp.obj	9834e51e8d89d1b8
+19	1599	7855241582890084	CMakeFiles/so_projekt1.dir/main.cpp.obj	6766e6db2b58e072
+14	1806	7855241584939279	CMakeFiles/so_projekt1.dir/modes/Benchmark.cpp.obj	341f630b3be63369
+1807	2177	7855241588611060	so_projekt1.exe	5be3dd5a5e1299a4
