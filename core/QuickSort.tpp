@@ -55,16 +55,6 @@ void QuickSort<T>::quickSort(int left, int right) {
              quickSort(pivot+1, right);
          }
 
-//         // Multithreading
-//         if( threadCount < maxThreads ){
-//             threadCount++;
-//             threadCreated = true;
-//             thread = std::thread(&QuickSort<T>::quickSort, this, pivot+1, right);
-//         } else {
-//             quickSort(pivot+1, right);
-//         }
-//         quickSort(left, pivot-1);
-
          if(threadCreated)
              thread.join();
      }
@@ -74,8 +64,6 @@ template <typename T>
 bool QuickSort<T>::verify() {
     for (int i = 1; i < size; i++) {
         if (array[i] < array[i - 1]){
-            std::cout<<"\n\nBLAD SORTOWANIA\n\n";
-            system("PAUSE");
             return false;
         }
     }
